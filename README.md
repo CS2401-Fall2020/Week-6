@@ -7,8 +7,8 @@ You should use the code we developed in class on [September 23rd](https://github
 
 Do not change the method signatures. **Do not use helper methods**. 
 
-# Tasks
-## `mergeSortLengths(String[] stringArray)`
+## Tasks
+### `mergeSortLengths(String[] stringArray)`
 
 This *recursive* method will use merge sort to sort the elements in `stringArry` by thier **string lengths**. 
 The method will be implemented by creating two arrays of half the length
@@ -35,7 +35,7 @@ Given the Strings "AAAAA","BBBB","CCC","DD","E" the returned array would be:
 ```
 The string lengths in the result are 1, 2, 3, 4, 5.  
 
-## `binarySearchLengths(String[] inArray, String search, int start, int end)`
+### `binarySearchLengths(String[] inArray, String search, int start, int end)`
 This method will take in a array of strings that have been sorted in order of **increasing length**, 
 for ties in the string lengths they will be in alphabetical order. 
 The method also takes in a search string and range of indexes (start, end). 
@@ -50,12 +50,12 @@ This means the method first looked in the range `0` to `2`, then made a recursiv
 `binarySearchLengths({"a","b","c","d","e","f","g"},"e",0,6)` would return the string `"(0,6) (4,6) (4,4) True"`
 This means the method first looked in the range `0` to `6`, then made a recursive call to the range `4` to `6`, then made a recursive call to the range `4` to `4`, then made the determiniation that the element was in the array `"True"`.
 
-## Testing
+### Testing
 You should provide 10 unit tests in your main method that show your new methods satisfy all of the requirements 
 These can be formatted using print statements or java assert statements (no need to use JUnit).
 Each test should be clearly labeled within the main method, and accompanied by text explaining the expected value for the test and why that test is included.
 
-# Grading
+## Grading
 * `binarySearchLengths` -- 50 pts
 * `binarySearchLengths` -- 30 pts
 * unit tests -- 20 pts (2 pts each) 
